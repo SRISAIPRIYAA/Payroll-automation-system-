@@ -1,0 +1,4 @@
+Flask
+waitress
+mysql-connector-python
+python-dotenv
