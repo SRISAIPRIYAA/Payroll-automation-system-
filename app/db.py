@@ -2,10 +2,10 @@ import mysql.connector
 
 def connect_to_db():
     conn=mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="lovetobake",
-        database="sree_narayana"
+        host="HOST_NAME",
+        user="USER_NAME",
+        password="YOUR_PASSWORD",
+        database="YOUR_DATABASE"
     )
     return conn
 
@@ -23,4 +23,5 @@ def find_workind_days(cursor,name,year,month):
     a=cursor.fetchone()
     if not a:
         return 0
+
     return a[0]
